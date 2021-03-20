@@ -1,0 +1,27 @@
+version: "3"
+services:
+  backend:
+    image: node:12
+    restart: always
+    ports:
+      - 4000:4000
+    volumes:
+      - ./backend:/usr/app
+      - ./upload:/usr/app/public/upload
+    environment:
+      - DB_URI=mongodb://mongodb:27017
+    command:
+      - /bin/bash
+      - -c
+      - |
+        cd /usr/app
+        npm start
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:3.6
+    restart: always
+    volumes:
+      - ./data:/data/db
+    ports:
+      - 27017:27017
