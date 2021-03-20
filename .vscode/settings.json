@@ -1,0 +1,15 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "css": "css",
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.colorDecorators": "on"
+  }
