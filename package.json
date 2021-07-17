@@ -1,0 +1,13 @@
+{
+  "name": "fwd",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lerna run start",
+    "preinstall": "lerna clean -y",
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
